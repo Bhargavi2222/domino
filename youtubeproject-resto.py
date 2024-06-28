@@ -1,4 +1,4 @@
-import json
+import json                   #json is just used to store data in text file.
 def get_rating(reviews):
     rating = 5
     if reviews: 
@@ -80,7 +80,7 @@ while True:
     else:
         data['items']=items
         with open('rest.json','w') as f:
-            json.dump(data,f )
+            json.dump(data,f )  #allows you to store JSON data directly into a file
         print("Thank you")
         break
 
